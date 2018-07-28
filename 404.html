@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>하와와</title>
+</head>
+<body>
+	<script type="text/javascript">
+		!function(l){
+			var p = l.pathname.split('/');
+            switch(p[0]){
+                case 'sorry':location.replace('/?sorry='+(p[1]||l.hostname));return;
+            }
+            location.replace('/?404');
+		}(window.location);
+	</script>
+</body>
+</html>
